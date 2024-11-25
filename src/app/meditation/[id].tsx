@@ -13,6 +13,7 @@ import { Audio, AVPlaybackStatus } from "expo-av";
 
 import { meditations } from "~/data";
 import audio from "../../../assets/meditations/audio1.mp3";
+import AnimatedBackground from "~/components/AnimatedBackground";
 const audioUrl = "https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav";
 
 export default function MeditationDetail() {
@@ -89,7 +90,8 @@ export default function MeditationDetail() {
   }
 
   return (
-    <SafeAreaView className="flex-1 p-2 justify-between bg-orange-400">
+    <SafeAreaView className="flex-1 p-2 justify-between bg-orange-200">
+      <AnimatedBackground />
       <View className="flex-1">
         <View className="flex-1">
           <View className="flex-row items-center justify-between p-10">
